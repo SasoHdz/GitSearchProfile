@@ -2,10 +2,11 @@ import React, { useState } from "react";
 import { IconButton, Stack, TextField } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 
+// eslint-disable-next-line react/prop-types
 const Searcher = ({ setInputUser }) => {
   const [valueInput, setValueInput] = useState("");
 
-  const onHandleSearchChange = (e) => {
+  const onSearchValueChange = (e) => {
     const { value } = e.target;
     setValueInput(value);
   };
@@ -23,12 +24,13 @@ const Searcher = ({ setInputUser }) => {
       }}
     >
       <TextField
-        onChange={onHandleSearchChange}
+        onChange={onSearchValueChange}
         id="outlined-basic"
         label="GitHub User"
         placeholder="Buscar Usuario de GitHub"
         variant="outlined"
         size="small"
+        value={valueInput}
         sx={{
           width: "90%",
         }}
