@@ -10,19 +10,20 @@ const PaperInfo = (props) => {
       <Stack
         spacing={3}
         direction="row"
-        sx={{ justifyContent: "space-evenly", margin: "20px" }}
+        height={{xs:"60px"}}
+        sx={{ alignItems:'center' ,justifyContent: "space-evenly", margin: "20px",}}
       >
         <Stack>
-          <Typography variant="h5">Repos</Typography>
-          <Typography variant="h6">{public_repos}</Typography>
+          <Typography variant={{xs:"subtitle1",md:"h5"}}>Repos</Typography>
+          <Typography variant={{xs:"subtitle2",md:"h6"}} sx={{textAlign:'center'}}>{public_repos}</Typography>
         </Stack>
         <Stack>
-          <Typography variant="h5">Followers</Typography>
-          <Typography variant="h6">{followers}</Typography>
+          <Typography variant={{xs:"subtitle1",md:"h5"}}>Followers</Typography>
+          <Typography variant={{xs:"subtitle2",md:"h6"}} sx={{textAlign:'center'}}>{followers}</Typography>
         </Stack>
         <Stack>
-          <Typography variant="h5">Following</Typography>
-          <Typography variant="h6">{following}</Typography>
+          <Typography variant={{xs:"subtitle1",md:"h5"}}>Following</Typography>
+          <Typography variant={{xs:"subtitle2",md:"h6"}} sx={{textAlign:'center'}}>{following}</Typography>
         </Stack>
       </Stack>
     </Paper>

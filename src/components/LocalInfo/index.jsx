@@ -28,7 +28,7 @@ const LocalInfo = (props) => {
         </Stack>
       </Grid>
       <Grid item xs={6}>
-        <Stack direction="row" spacing={2}>
+        <Stack direction={{xs:"column",md:"row"}} spacing={2}>
           <LanguageIcon />
           {blog != null ? (
             <a target="_blank" href={blog}>

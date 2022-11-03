@@ -19,8 +19,8 @@ const Searcher = ({ setInputUser }) => {
     <Stack
       direction="row"
       sx={{
-        marginTop: "30px",
-        width: "80%",
+        margin: {xs:"30px -20px 0px 0px", sm:'30px,0px 0px'},
+        width: {xs:"100%",sm:"80%"},
       }}
     >
       <TextField

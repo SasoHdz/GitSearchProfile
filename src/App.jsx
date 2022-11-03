@@ -34,10 +34,10 @@ const App = () => {
     <Container
       sx={{
         background: "whitesmoke",
-        width: "80vw",
-        height: "500px",
+        width: {xs:'90vw', md:'80vw'},
+        height: {xs:"auto",md:"500px"},
         borderRadius: "16px",
-        marginTop: "40px",
+        margin:"40px auto 0px",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
