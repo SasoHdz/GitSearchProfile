@@ -9,7 +9,7 @@ const UserCard = (props) => {
 
   return (
     <Grid container spacing={2} sx={{ marginTop: "15px" }}>
-      <Grid item xs={5} md={3}>
+      <Grid item xs={5} sm={3}>
         <CardMedia
           component="img"
           alt="Git User"
@@ -20,7 +20,7 @@ const UserCard = (props) => {
           }}
         />
       </Grid>
-      <Grid item xs={7} md={9}>
+      <Grid item xs={7} sm={9}>
         <Stack
           direction="column"
           spacing={1}

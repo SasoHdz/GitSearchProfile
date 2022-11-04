@@ -7,9 +7,9 @@ const PrincipalInfo = (props) => {
 
   return (
     <Fragment>
-      <Stack direction={{xs:"column",md:"row"}} sx={{ justifyContent: "space-between" }}>
-        <Typography variant={{xs:"h5",md:"h4"}}>{name}</Typography>
-        <Typography variant={{xs:"body1",md:"subtitle2"}}>{created_at}</Typography>
+      <Stack direction={{xs:"column",sm:"row"}} sx={{ justifyContent: "space-between" }}>
+        <Typography variant={{xs:"h2",sm:"h1"}}>{name}</Typography>
+        <Typography variant={{xs:"body1",sm:"h2"}}>{created_at}</Typography>
       </Stack>
       <Typography variant="caption">{`@${login}`}</Typography>
     </Fragment>

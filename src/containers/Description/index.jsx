@@ -14,7 +14,7 @@ const Description = (props) => {
         }}
       >
         {bio != null ? (
-          <Typography variant={{xs:"body2",md:"body1"}} sx={{textAlign:'justify'}}>{bio}</Typography>
+          <Typography variant={{xs:"body2",sm:"body1"}} sx={{textAlign:'justify'}}>{bio}</Typography>
         ) : (
           <Typography variant="body1"> Lorem ipsun</Typography>
         )}
