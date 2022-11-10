@@ -8,13 +8,16 @@ const Description = (props) => {
   const { bio } = userState;
   return (
     <React.Fragment>
-      <Stack
-        sx={{
-          justifyContent: "center",
-        }}
-      >
+      <Stack>
         {bio != null ? (
-          <Typography variant={{xs:"body2",sm:"body1"}} sx={{textAlign:'justify'}}>{bio}</Typography>
+          <Typography 
+            sx={{
+              fontSize:{xs:"16px", sm:"18px"},
+              textAlign:'justify'
+            }}
+          >
+            {bio}
+          </Typography>
         ) : (
           <Typography variant="body1"> Lorem ipsun</Typography>
         )}

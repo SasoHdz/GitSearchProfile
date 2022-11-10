@@ -20,7 +20,7 @@ const Searcher = ({ setInputUser }) => {
       direction="row"
       sx={{
         margin: {xs:"30px -20px 0px 0px", sm:'30px,0px 0px'},
-        width: {xs:"100%",md:"80%"},
+        width: {xs:"100%",md:"80%",lg:"40%"},
       }}
     >
       <TextField

@@ -8,19 +8,26 @@ const UserCard = (props) => {
   const { avatar_url } = userState;
 
   return (
-    <Grid container spacing={2} sx={{ marginTop: "15px" }}>
-      <Grid item xs={5} sm={3}>
+    <Grid container 
+      spacing={2} 
+      sx={{ 
+        marginTop: "15px",
+        justifyContent:{xs:"center"},
+        alignItems:{xs:"center"}
+      }}
+    >
+      <Grid item xs={8} sm={3}>
         <CardMedia
           component="img"
           alt="Git User"
           image={avatar_url}
           sx={{
             borderRadius: "50%",
-            marginLeft: "5px",
+            marginLeft:{sm:"2px"},
           }}
         />
       </Grid>
-      <Grid item xs={7} sm={9}>
+      <Grid item xs={12} sm={9}>
         <Stack
           direction="column"
           spacing={1}

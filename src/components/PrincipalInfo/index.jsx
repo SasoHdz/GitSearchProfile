@@ -8,10 +8,20 @@ const PrincipalInfo = (props) => {
   return (
     <Fragment>
       <Stack direction={{xs:"column",sm:"row"}} sx={{ justifyContent: "space-between" }}>
-        <Typography variant={{xs:"h2",sm:"h1"}}>{name}</Typography>
-        <Typography variant={{xs:"body1",sm:"h2"}}>{created_at}</Typography>
+        <Typography sx={{
+          fontSize:{xs:"20px",sm:"30px"}
+        }}>{name}</Typography>
+        <Typography 
+          sx={{
+            fontSize:{xs:"16px",sm:"20px"}
+          }}
+        >{created_at}</Typography>
       </Stack>
-      <Typography variant="caption">{`@${login}`}</Typography>
+      <Typography 
+        sx={{
+          fontSize:{xs:"12px",sm:"18px"}
+        }}
+      >{`@${login}`}</Typography>
     </Fragment>
   );
 };

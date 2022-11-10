@@ -6,24 +6,61 @@ const PaperInfo = (props) => {
   const { public_repos, followers, following } = userState;
 
   return (
-    <Paper>
+    <Paper
+      sx={{
+        margin:"0 auto",
+        width:{sm:"85%",lg:"70%"},
+        alignSelf:{lg:"start"}
+      }}
+    >
       <Stack
         spacing={3}
         direction="row"
-        height={{xs:"60px"}}
-        sx={{ alignItems:'center' ,justifyContent: "space-evenly", margin: "20px",}}
+        height={{xs:"60px",lg:"70px"}}
+        sx={{ 
+          alignItems:'center' ,
+          justifyContent: "space-evenly", 
+          margin: "20px",
+        }}
       >
         <Stack>
-          <Typography variant={{xs:"subtitle1",md:"h5"}}>Repos</Typography>
-          <Typography variant={{xs:"subtitle2",md:"h6"}} sx={{textAlign:'center'}}>{public_repos}</Typography>
+          <Typography
+            sx={{
+              fontSize:{xs:"0.9rem", sm:"1.4rem"}
+            }}
+          >Repos</Typography>
+          <Typography 
+            sx={{
+              fontSize:{xs:"0.9rem", sm:"1.4rem"},
+              textAlign:'center'
+            }}
+          >{public_repos}</Typography>
         </Stack>
         <Stack>
-          <Typography variant={{xs:"subtitle1",md:"h5"}}>Followers</Typography>
-          <Typography variant={{xs:"subtitle2",md:"h6"}} sx={{textAlign:'center'}}>{followers}</Typography>
+          <Typography
+            sx={{
+              fontSize:{xs:"0.9rem", sm:"1.4rem"}
+            }}
+          >Followers</Typography>
+          <Typography 
+            sx={{
+              fontSize:{xs:"0.9rem", sm:"1.4rem"},
+              textAlign:'center'
+            }}
+          >{followers}</Typography>
         </Stack>
         <Stack>
-          <Typography variant={{xs:"subtitle1",md:"h5"}}>Following</Typography>
-          <Typography variant={{xs:"subtitle2",md:"h6"}} sx={{textAlign:'center'}}>{following}</Typography>
+          <Typography
+            sx={{
+              fontSize:{xs:"0.9rem", sm:"1.4rem"}
+            }} 
+          >Following</Typography>
+          <Typography 
+            sx={{
+              fontSize:{xs:"0.9rem", sm:"1.4rem"},
+              textAlign:'center'
+            }}
+          >{following}</Typography>
         </Stack>
       </Stack>
     </Paper>
